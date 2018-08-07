@@ -14,8 +14,7 @@ public class UserInfoImpl implements UserInfoInterface {
 
     @Resource
     private UserInfoMapper userInfoMapper;
-    @Resource
-    private TestTableDao testTableDao;
+
     @Override
     public List<UserInfo> userlist() {
         return userInfoMapper.userlist();
@@ -28,8 +27,5 @@ public class UserInfoImpl implements UserInfoInterface {
         return userInfoMapper.selectByPrimaryKey(id);
     }
 
-    @Override
-    public List<UserInfo> selectAll() {
-        return testTableDao.selectAll();
-    }
+
 }

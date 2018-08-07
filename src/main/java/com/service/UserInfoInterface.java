@@ -12,5 +12,5 @@ public interface UserInfoInterface {
 
     UserInfo user(Integer id);
 
-    List<UserInfo> selectAll();
+
 }

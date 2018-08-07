@@ -82,6 +82,7 @@ public class UserInfoController {
         File file=new File("e://test.xls");
         System.out.println(file);
         System.out.println("集合长度："+listExcel.size());
+        System.out.println("123456");
     }
 
 }

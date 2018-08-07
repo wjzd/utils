@@ -84,12 +84,4 @@ public class UserInfoController {
         System.out.println("集合长度："+listExcel.size());
     }
 
-
-    @Test
-    public void test1(){
-
-        List<UserInfo> list=userInfoInterface.selectAll();
-        System.out.println("大小："+list.size());
-    }
-
 }

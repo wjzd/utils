@@ -85,27 +85,27 @@
 
 
     <!-- 让spring为dao层创建bean -->
-    <!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 
-        &lt;!&ndash; 指定SqlSessionFactoryBean的名称 &ndash;&gt;
+        <!--指定SqlSessionFactoryBean的名称-->
         <property name="sqlSessionFactoryBeanName" value="SqlSessionFactoryBean"/>
 
-        &lt;!&ndash; 指定dao接口所在的包 &ndash;&gt;
+        <!--指定dao接口所在的包-->
         <property name="basePackage" value="com.dao"/>
 
-    </bean>-->
+    </bean>
 
 
     <!-- 通用 Mapper -->
     <!--替换了org.mybatis.spring.mapper.MapperScannerConfigurer-->
-    <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="cn.com.bluemoon.bd.service.spider.dao"/>
-        <property name="properties">
-            <value>
-                mappers=tk.mybatis.mapper.common.Mapper
-            </value>
-        </property>
-    </bean>
+    <!--<bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">-->
+        <!--<property name="basePackage" value="cn.com.bluemoon.bd.service.spider.dao"/>-->
+        <!--<property name="properties">-->
+            <!--<value>-->
+                <!--mappers=tk.mybatis.mapper.common.Mapper-->
+            <!--</value>-->
+        <!--</property>-->
+    <!--</bean>-->
 
     <!--   &lt;!&ndash; 创建事务管理器 &ndash;&gt;
        <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">

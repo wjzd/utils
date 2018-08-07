@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+		"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+
+  <!-- 本地mysql驱动包 D:\XXX\XXX\mysql.jar -->
+  <classPathEntry location="E:\maven\repository\mysql\mysql-connector-java\5.1.5\mysql-connector-java-5.1.5.jar" />
+
+  <context id="context1" >
+  	<!-- 数据库连接 -->
+    <jdbcConnection 
+    	driverClass="com.mysql.jdbc.Driver"
+    	connectionURL="jdbc:mysql://localhost:3306/excel"
+    	userId="root" 
+    	password="root" />
+    	
+    <!-- 模型 -->	
+    <javaModelGenerator 
+    	targetPackage="com.pojo"
+    	targetProject="src/main/java" />
+    	
+    <!-- Mapper -->
+    <sqlMapGenerator 
+    	targetPackage="com.mapping"
+    	targetProject="src/main/java" />
+    	
+    <!-- Dao接口 -->
+    <javaClientGenerator 
+    	targetPackage="com.dao"
+    	targetProject="src/main/java" 
+    	type="XMLMAPPER" />
+    	
+	  <table domainObjectName="UserInfo" tableName="userinfo" ></table>
+
+
+
+
+  </context>
+</generatorConfiguration>
